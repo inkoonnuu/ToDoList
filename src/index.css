@@ -1,4 +1,39 @@
-
 @tailwind utilities;
 @tailwind base;
 @tailwind components;
+
+.submit-btn {
+  @apply bg-green-500 p-1 font-bold  tracking-wide rounded-sm text-white hover:bg-green-400;
+}
+.parentElement {
+  @apply w-[90%] mx-auto my-5;
+}
+.formulaire {
+  @apply flex flex-col gap-2;
+}
+.input {
+  @apply border border-[#ddd] px-2 rounded-md h-10 focus:outline outline-yellow-400 focus:shadow-md;
+}
+.container {
+  @apply bg-gradient-to-tr  flex mt-2 gap-5 justify-center;
+}
+.tasks-list {
+  @apply w-[300px] h-[400px]   border-dashed border-[3px] border-black;
+}
+.table-title {
+  @apply border-black border-b-[3px] p-1  text-center 
+ font-semibold;
+}
+
+.task {
+  @apply m-2 border p-1 rounded-md h-9 bg-[#d000ff] text-white cursor-grabbing flex justify-between;
+}
+.task-end {
+  @apply w-[300px] h-[400px]  border-[3px] border-black;
+}
+.task-complete {
+  @apply m-2 border p-1 rounded-md h-9 bg-[#00eeff] text-white cursor-grabbing flex justify-between;
+}
+.clear-btn {
+  @apply bg-[#fc0000]  p-1 fixed bottom-2 z-10 w-[90%] left-1/2 -translate-x-1/2 rounded-sm text-white font-semibold tracking-wider;
+}
